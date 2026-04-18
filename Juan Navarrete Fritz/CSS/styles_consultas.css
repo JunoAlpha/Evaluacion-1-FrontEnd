@@ -152,6 +152,13 @@ header {
     object-fit: cover;
 }
 
+.formulario_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 
 @media (max-width: 768px) {
     .carousel-item img {
@@ -256,4 +263,9 @@ header {
     text-align: center;
   }
 }
+
+
+
+
+
 
