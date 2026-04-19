@@ -77,6 +77,8 @@ header {
 }
 
 .logo_container a:hover {
+    width: 220px;
+    height: 90px;
     background-color: transparent;
 }
 
@@ -241,6 +243,15 @@ header {
 
 
 @media (max-width: 1024px) {
+    .historia_container li {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-size: 30px;
+    }
+    .historia_text, .historia_columns {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
     .main_navbar ul {
         gap: 30px;
         left: 20px;
@@ -274,6 +285,20 @@ header {
 }
 
 @media (max-width: 768px) {
+    .historia_container li {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 25px;
+    }
+    .historia_text {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .historia_columns {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     .main_navbar {
         flex-direction: column;
         padding: 15px;

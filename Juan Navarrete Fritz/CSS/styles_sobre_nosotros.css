@@ -78,6 +78,8 @@ header {
 }
 
 .logo_container a:hover {
+  width: 220px;
+  height: 90px;
   background-color: transparent;
 }
 
@@ -281,6 +283,10 @@ header {
 }
 
 @media (max-width: 1024px) {
+    .sobre_nosotros_columns {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
   .main_navbar ul {
     gap: 30px;
     left: 20px;
@@ -314,6 +320,17 @@ header {
 }
 
 @media (max-width: 768px) {
+    .sobre_nosotros_columns {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .sobre_la_compañia_title h1 {
+        font-size: 35px;
+    }
+    .valores_titulo h2, .mision_titulo h2 {
+        font-size: 25px;
+    }
   .main_navbar {
     flex-direction: column;
     padding: 15px;

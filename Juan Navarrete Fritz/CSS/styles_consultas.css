@@ -73,6 +73,8 @@ header {
 }
 
 .logo_container a:hover {
+    width: 220px;
+    height: 90px;
     background-color: transparent;
 }
 
@@ -177,7 +179,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    min-height: 70vh;
+    padding: 2rem 0;
 }
 
 .consulta_container h1{
@@ -225,6 +228,11 @@ header {
 }
 
 @media (max-width: 768px) {
+    .consulta_container h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 2rem;
+    }
     .main_navbar {
         flex-direction: column;
         padding: 15px;

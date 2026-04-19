@@ -73,6 +73,8 @@ header {
 }
 
 .logo_container a:hover {
+    width: 220px;
+    height: 90px;
     background-color: transparent;
 }
 
@@ -173,6 +175,43 @@ header {
     object-fit: cover;
 }
 
+.servicios_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 17rem;
+}
+
+.servicios_title {
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: #01554e;
+    color: aliceblue;
+}
+
+.servicios_title h1{
+    font-size: 70px;
+}
+
+.card-img-top {
+    height: 280px;
+    object-fit: cover;
+}
+
+.card .btn {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card:hover .btn {
+    opacity: 1;
+    visibility: visible;
+}
 
 @media (max-width: 1024px) {
     .main_navbar ul {
@@ -208,6 +247,13 @@ header {
 }
 
 @media (max-width: 768px) {
+    .servicios_title h1 {
+        font-size: 40px;
+    }
+    .card {
+        width: 100% !important;
+        max-width: 24rem;
+    }
     .main_navbar {
         flex-direction: column;
         padding: 15px;

@@ -73,6 +73,8 @@ header {
 }
 
 .logo_container a:hover {
+    width: 220px;
+    height: 90px;
     background-color: transparent;
 }
 
@@ -173,6 +175,79 @@ header {
     object-fit: cover;
 }
 
+.img_main1 img {
+    margin: 5rem auto;
+    display: block;
+    height: 500px;
+    width: 85%;
+    object-fit: cover;
+    border-radius: 15rem;
+}
+
+.works_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 2rem 10%;
+    margin-bottom: 5rem;
+}
+
+.works_title {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.works_title h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #01554e;
+}
+
+.works_img {
+    width: 100%;
+    height: 100%;
+}
+
+.works_img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.works_img img:hover {
+    transform: scale(1.03);
+}
+
+.logo_main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.logo_main_container img {
+    width: 650px;
+    height: 340px;
+}
+
+.logo_main_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.logo_main_text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #01554e;
+}
 
 @media (max-width: 1024px) {
     .main_navbar ul {
@@ -208,6 +283,21 @@ header {
 }
 
 @media (max-width: 768px) {
+    .img_main1 img {
+        height: 300px;
+        width: 95%;
+        border-radius: 5rem;
+    }
+    .works_title h1 {
+        font-size: 35px;
+    }
+    .works_container {
+        grid-template-columns: 1fr;
+        padding: 2rem 5%;
+    }
+    .works_img img {
+        height: 250px;
+    }
     .main_navbar {
         flex-direction: column;
         padding: 15px;
